@@ -47,12 +47,3 @@ Cases in which you get an error using these optional parameters:
 
 Note that search_keyword parameter is dependent upon the others. 
 If we want to use it, we have to insert it at the end of the URL.
-
-5) Final notes about used libraries
-
-I decided to use just the flask main library. I could have added more abstraction layers 
-(such as using Flask-RESTFUL or Blueprint) but i reckoned it was suitable as well using 
-only flask library because it has all I needed to be developing the API. 
-Also, i preferred to use string of queries in the Database class to handle the data
-rather than build an ORM structure where we can map the tables to models (using SQLAlchemy for instance). 
-The peculiarity of the data structure (nested set model) led me to use this approach.
